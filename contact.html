@@ -1,185 +1,202 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact - Les Pattes Libres</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <a class="lien-evitement" href="#contenu">Aller au contenu</a>
 
     <header class="entete-site">
-        <div class="barre">
-            <a class="logo" href="index.html"><img src="ressources/logo.png" alt="Les Pattes Libres, refuge - retour à l'accueil"></a>
-            <nav aria-label="Navigation principale">
-                <ul class="menu">
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="adopter.html">Adopter</a></li>
-                    <li><a href="contact.html" class="menu-action" aria-current="page">Faire une demande</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="barre">
+        <a class="logo" href="index.html"
+          ><img src="ressources/logo.png" alt="Les Pattes Libres, refuge - retour à l'accueil"
+        /></a>
+        <nav aria-label="Navigation principale">
+          <ul class="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="adopter.html">Adopter</a></li>
+            <li>
+              <a href="contact.html" class="menu-action" aria-current="page">Faire une demande</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main id="contenu">
+      <section class="bandeau bandeau-simple" aria-labelledby="titre-contact">
+        <div class="conteneur">
+          <p class="fil-ariane"><a href="index.html">Accueil</a> / Contact</p>
+          <h1 id="titre-contact">Contactez-nous</h1>
+          <p>Votre projet d'adoption commence ici.</p>
+        </div>
+      </section>
 
-        <section class="bandeau bandeau-simple" aria-labelledby="titre-contact">
-            <div class="conteneur">
-                <p class="fil-ariane"><a href="index.html">Accueil</a> / Contact</p>
-                <h1 id="titre-contact">Contactez-nous</h1>
-                <p>Votre projet d'adoption commence ici.</p>
+      <section class="bloc" aria-labelledby="titre-infos">
+        <div class="conteneur deux-colonnes">
+          <div>
+            <h2 id="titre-infos">Nos informations</h2>
+            <ul class="coordonnees">
+              <li><strong>Adresse</strong> 10 rue des Animaux, 28000 Chartres.</li>
+              <li><strong>Téléphone</strong> 02 00 00 00 00</li>
+              <li>
+                <strong>Email</strong>
+                <a href="mailto:contact@lespatteslibres.fr">contact@lespatteslibres.fr</a>
+              </li>
+              <li><strong>Accès</strong> parking disponible à proximité.</li>
+            </ul>
+          </div>
+
+          <div>
+            <table>
+              <caption>
+                Horaires d'ouverture
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">Jour</th>
+                  <th scope="col">Horaires</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Lundi</th>
+                  <td>Fermé</td>
+                </tr>
+                <tr>
+                  <th scope="row">Mardi</th>
+                  <td>10 h - 18 h</td>
+                </tr>
+                <tr>
+                  <th scope="row">Mercredi</th>
+                  <td>10 h - 18 h</td>
+                </tr>
+                <tr>
+                  <th scope="row">Jeudi</th>
+                  <td>10 h - 18 h</td>
+                </tr>
+                <tr>
+                  <th scope="row">Vendredi</th>
+                  <td>10 h - 18 h</td>
+                </tr>
+                <tr>
+                  <th scope="row">Samedi</th>
+                  <td>10 h - 18 h</td>
+                </tr>
+                <tr>
+                  <th scope="row">Dimanche</th>
+                  <td>Fermé</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="bloc bloc-alt" aria-labelledby="titre-formulaire">
+        <div class="conteneur">
+          <div class="bloc-titre">
+            <h2 id="titre-formulaire">Demande d'adoption</h2>
+            <p>
+              Tous les champs sont obligatoires. Le refuge vous répondra après étude de votre
+              demande.
+            </p>
+          </div>
+
+          <form action="#" method="post">
+            <div class="champ">
+              <label for="nom">Nom et prénom</label>
+              <input type="text" id="nom" name="nom" autocomplete="name" required />
             </div>
-        </section>
 
-        <section class="bloc" aria-labelledby="titre-infos">
-            <div class="conteneur deux-colonnes">
-                <div>
-                    <h2 id="titre-infos">Nos informations</h2>
-                    <ul class="coordonnees">
-                        <li><strong>Adresse</strong> 10 rue des Animaux, 28000 Chartres.</li>
-                        <li><strong>Téléphone</strong> 02 00 00 00 00</li>
-                        <li><strong>Email</strong> <a href="mailto:contact@lespatteslibres.fr">contact@lespatteslibres.fr</a></li>
-                        <li><strong>Accès</strong> parking disponible à proximité.</li>
-                    </ul>
-                </div>
-
-                <div>
-                    <table>
-                        <caption>Horaires d'ouverture</caption>
-                        <thead>
-                            <tr>
-                                <th scope="col">Jour</th>
-                                <th scope="col">Horaires</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr><th scope="row">Lundi</th><td>Fermé</td></tr>
-                            <tr><th scope="row">Mardi</th><td>10 h - 18 h</td></tr>
-                            <tr><th scope="row">Mercredi</th><td>10 h - 18 h</td></tr>
-                            <tr><th scope="row">Jeudi</th><td>10 h - 18 h</td></tr>
-                            <tr><th scope="row">Vendredi</th><td>10 h - 18 h</td></tr>
-                            <tr><th scope="row">Samedi</th><td>10 h - 18 h</td></tr>
-                            <tr><th scope="row">Dimanche</th><td>Fermé</td></tr>
-                        </tbody>
-                    </table>
-                </div>
+            <div class="champ">
+              <label for="email">Adresse email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required />
             </div>
-        </section>
 
-        <section class="bloc bloc-alt" aria-labelledby="titre-formulaire">
-            <div class="conteneur">
-                <div class="bloc-titre">
-                    <h2 id="titre-formulaire">Demande d'adoption</h2>
-                    <p>Tous les champs sont obligatoires. Le refuge vous répondra après étude de votre demande.</p>
-                </div>
-
-                <form action="#" method="post">
-
-                    <div class="champ">
-                        <label for="nom">Nom et prénom</label>
-                        <input type="text" id="nom" name="nom" autocomplete="name" required>
-                    </div>
-
-                    <div class="champ">
-                        <label for="email">Adresse email</label>
-                        <input type="email" id="email" name="email" autocomplete="email" required>
-                    </div>
-
-                    <div class="champ">
-                        <label for="telephone">Téléphone</label>
-                        <input type="tel" id="telephone" name="telephone" autocomplete="tel" required>
-                    </div>
-
-                    <div class="champ">
-                        <label for="animal">Animal souhaité</label>
-                        <select id="animal" name="animal" required>
-                            <option value="">Choisir un animal</option>
-                            <option value="Rex">Rex</option>
-                            <option value="Mia">Mia</option>
-                            <option value="Oscar">Oscar</option>
-                            <option value="Luna">Luna</option>
-                            <option value="Max">Max</option>
-                            <option value="Simba">Simba</option>
-                        </select>
-                    </div>
-
-                    <div class="champ">
-                        <label for="logement">Votre logement</label>
-                        <select id="logement" name="logement" required>
-                            <option value="">Choisir une réponse</option>
-                            <option value="Appartement">Appartement</option>
-                            <option value="Maison">Maison</option>
-                            <option value="Autre">Autre</option>
-                        </select>
-                    </div>
-
-                    <div class="champ">
-                        <label for="autres">Avez-vous d'autres animaux ?</label>
-                        <select id="autres" name="autres" required>
-                            <option value="">Choisir une réponse</option>
-                            <option value="Oui">Oui</option>
-                            <option value="Non">Non</option>
-                        </select>
-                    </div>
-
-                    <div class="champ champ-large">
-                        <label for="projet">Présentez votre projet d'adoption</label>
-                        <textarea id="projet" name="projet" rows="5" required></textarea>
-                    </div>
-
-                    <div class="champ-large">
-                        <label class="accord" for="accord">
-                            <input type="checkbox" id="accord" name="accord" required>
-                            J'accepte l'utilisation de mes données pour traiter ma demande.
-                        </label>
-                    </div>
-
-                    <button type="submit">Envoyer ma demande</button>
-
-                </form>
+            <div class="champ">
+              <label for="telephone">Téléphone</label>
+              <input type="tel" id="telephone" name="telephone" autocomplete="tel" required />
             </div>
-        </section>
 
-        <section class="bloc" aria-labelledby="titre-plan">
-            <div class="conteneur carte-acces">
-                <div class="bloc-titre">
-                    <h2 id="titre-plan">Plan d'accès</h2>
-                    <p>10 rue des Animaux, 28000 Chartres. Parking disponible à proximité.</p>
-                </div>
-                <iframe title="Plan d'accès au refuge Les Pattes Libres à Chartres" src="https://www.openstreetmap.org/export/embed.html?bbox=1.4700%2C48.4350%2C1.5250%2C48.4650&amp;layer=mapnik" loading="lazy"></iframe>
+            <div class="champ">
+              <label for="animal">Animal souhaité</label>
+              <select id="animal" name="animal" required>
+                <option value="">Choisir un animal</option>
+                <option value="Rex">Rex</option>
+                <option value="Mia">Mia</option>
+                <option value="Oscar">Oscar</option>
+                <option value="Luna">Luna</option>
+                <option value="Max">Max</option>
+                <option value="Simba">Simba</option>
+              </select>
             </div>
-        </section>
 
+            <div class="champ">
+              <label for="logement">Votre logement</label>
+              <select id="logement" name="logement" required>
+                <option value="">Choisir une réponse</option>
+                <option value="Appartement">Appartement</option>
+                <option value="Maison">Maison</option>
+                <option value="Autre">Autre</option>
+              </select>
+            </div>
+
+            <div class="champ">
+              <label for="autres">Avez-vous d'autres animaux ?</label>
+              <select id="autres" name="autres" required>
+                <option value="">Choisir une réponse</option>
+                <option value="Oui">Oui</option>
+                <option value="Non">Non</option>
+              </select>
+            </div>
+
+            <div class="champ champ-large">
+              <label for="projet">Présentez votre projet d'adoption</label>
+              <textarea id="projet" name="projet" rows="5" required></textarea>
+            </div>
+
+            <div class="champ-large">
+              <label class="accord" for="accord">
+                <input type="checkbox" id="accord" name="accord" required />
+                J'accepte l'utilisation de mes données pour traiter ma demande.
+              </label>
+            </div>
+
+            <button type="submit">Envoyer ma demande</button>
+          </form>
+        </div>
+      </section>
     </main>
 
     <footer class="pied-site">
-        <div class="conteneur">
-            <div class="pied-grille">
-                <div>
-                    <h2>Les Pattes Libres</h2>
-                    <p>Un nouveau départ pour chaque animal.</p>
-                    <p>10 rue des Animaux, 28000 Chartres</p>
-                </div>
-                <div>
-                    <h2>Navigation</h2>
-                    <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="adopter.html">Adopter</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h2>Nous joindre</h2>
-                    <p>02 00 00 00 00</p>
-                    <p><a href="mailto:contact@lespatteslibres.fr">contact@lespatteslibres.fr</a></p>
-                    <p>Du mardi au samedi, 10 h - 18 h</p>
-                </div>
-            </div>
-            <p class="mentions">Les Pattes Libres - Tous droits réservés</p>
+      <div class="conteneur">
+        <div class="pied-grille">
+          <div>
+            <h2>Les Pattes Libres</h2>
+            <p>Un nouveau départ pour chaque animal.</p>
+            <p>10 rue des Animaux, 28000 Chartres</p>
+          </div>
+          <div>
+            <h2>Navigation</h2>
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="adopter.html">Adopter</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Nous joindre</h2>
+            <p>02 00 00 00 00</p>
+            <p><a href="mailto:contact@lespatteslibres.fr">contact@lespatteslibres.fr</a></p>
+            <p>Du mardi au samedi, 10 h - 18 h</p>
+          </div>
         </div>
+        <p class="mentions">Les Pattes Libres - Tous droits réservés</p>
+      </div>
     </footer>
-
-</body>
+  </body>
 </html>
